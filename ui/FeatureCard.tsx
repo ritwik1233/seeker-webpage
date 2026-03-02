@@ -32,7 +32,7 @@ export const FEATURES: Feature[] = [
     icon: LayoutGrid,
     iconBg: "from-pink-400 to-rose-500",
     title: "Ditch the Spreadsheets",
-    body: "We do the heavy lifting so you can close those 15+ browser tabs. One place. One plan. Everything sorted.",
+    body: "One Place,  Many plans, all customized to your needs.",
     accent: "border-pink-100 dark:border-pink-900/40",
     numColor: "from-pink-400 to-rose-500",
   },

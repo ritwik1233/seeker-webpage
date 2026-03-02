@@ -7,7 +7,6 @@ import { FeatureCard, FEATURES } from "./FeatureCard";
 
 // ── Main page ─────────────────────────────────────────────────────────────────
 export function LandingPage() {
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 dark:from-slate-950 dark:via-gray-900 dark:to-slate-950 overflow-x-hidden">
       {/* ════════════════════════════════════════════════════════════════════
@@ -174,11 +173,7 @@ export function LandingPage() {
 
           {/* Preview pill row */}
           <div className="flex flex-wrap justify-center gap-3 mt-16">
-            {[
-              "🛫  Flights",
-              "🏨  Hotels",
-              "🎒  Activities",
-            ].map((item) => (
+            {["🛫  Flights", "🏨  Hotels", "🎒  Activities"].map((item) => (
               <span
                 key={item}
                 className="px-4 py-2 rounded-full bg-orange-50 dark:bg-slate-800 border border-orange-100 dark:border-slate-700 text-sm text-gray-600 dark:text-slate-300 shadow-sm"
@@ -219,20 +214,18 @@ export function LandingPage() {
           {/* Headline */}
           <div>
             <h2 className="text-[clamp(2rem,6vw,3.5rem)] text-white leading-tight mb-5">
-              Focus on the Adventure,{" "}
-              <span className="text-white/75">
-                Not the Admin
-              </span>
+              Seek the Moment,{" "}
+              <span className="text-white/75">Not the Map</span>
             </h2>
           </div>
 
           {/* Sub-headline */}
           <div>
             <p className="text-lg text-white/80 mb-10 max-w-xl mx-auto leading-relaxed">
-              We're launching soon. Drop your email to be the
-              first to experience the{" "}
+              Your perfect trip is out there—we just help you find it.{" "}
               <span className="text-white">
-                smartest travel agent in your pocket
+                Seek-R turns your vibe into a complete itinerary in minutes,
+                handling the admin so you can stay focused on the discovery.
               </span>
               .
             </p>
@@ -249,9 +242,8 @@ export function LandingPage() {
           {/* ── Footer merged into Section 3 ── */}
           <div className="mt-8 pt-8 border-t border-white/20 flex justify-center">
             <p className="text-xs text-white/40 flex items-center gap-1">
-              Made with{" "}
-              <span className="text-rose-300">♥</span> for
-              curious seek-rs · © 2026
+              Made with <span className="text-rose-300">♥</span> for curious
+              seek-rs · © 2026
             </p>
           </div>
         </div>
