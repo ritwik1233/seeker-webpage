@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
-import { WandrLogo } from "./WanderLogo";
+import { SeekRLogo } from "./WanderLogo";
 import { EmailForm } from "./EmailForm";
 import { FeatureCard, FEATURES } from "./FeatureCard";
 
@@ -51,7 +51,7 @@ export function LandingPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.05 }}
           >
-            <WandrLogo height="h-40" />
+            <SeekRLogo height="h-40" />
           </motion.div>
         </div>
 
@@ -70,7 +70,7 @@ export function LandingPage() {
           >
             Stop Planning,{" "}
             <span className="bg-gradient-to-r from-orange-400 via-pink-400 to-violet-400 bg-clip-text text-transparent drop-shadow-none">
-              Start Wandering
+              Start Seeking
             </span>
           </motion.h1>
 
@@ -251,7 +251,7 @@ export function LandingPage() {
             <p className="text-xs text-white/40 flex items-center gap-1">
               Made with{" "}
               <span className="text-rose-300">♥</span> for
-              curious wand-rs · © 2026
+              curious seek-rs · © 2026
             </p>
           </div>
         </div>

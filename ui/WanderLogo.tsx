@@ -1,5 +1,5 @@
 import { motion } from "motion/react"; 
-interface WandrLogoProps {
+interface SeekRLogoProps {
   /** Tailwind height class — kept for API compat */
   height?: string;
   className?: string;
@@ -14,13 +14,13 @@ const fontSizeMap: Record<string, string> = {
 };
 
 /**
- * WandR brand wordmark — white text matching the hero headline style.
+ * SeekR brand wordmark — white text matching the hero headline style.
  */
-export function WandrLogo({
+export function SeekRLogo({
   height = "h-40",
   className = "",
   size = "lg",
-}: WandrLogoProps) {
+}: SeekRLogoProps) {
   return (
     <motion.h4
       initial={{ opacity: 0, y: 24 }}
@@ -54,7 +54,7 @@ export function WandrLogo({
         }}
       />
       <span style={{ position: "relative", zIndex: 1 }}>
-        WandR
+        SeekR
       </span>
     </motion.h4>
   );
