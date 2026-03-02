@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "../../../lib/db";
-import { Subscriber } from "../../../models/Subscriber";
+import { PreRegister } from "../../../models/PreRegister";
 
 async function verifyTurnstile(token: string, ip: string) {
   const res = await fetch(
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
   await connectDB();
 
   try {
-    await Subscriber.create({ email });
+    await PreRegister.create({ email });
   } catch (err: unknown) {
     if (
       err instanceof Error &&
@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
       (err as Record<string, unknown>).code === 11000
     ) {
       return NextResponse.json(
-        { error: "Email already subscribed" },
+        { error: "Email already registered" },
         { status: 409 },
       );
     }
