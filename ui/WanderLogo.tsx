@@ -8,9 +8,9 @@ interface WandrLogoProps {
 }
 
 const fontSizeMap: Record<string, string> = {
-  sm: "1.25rem",
-  md: "clamp(1.4rem, 2.8vw, 2rem)",
-  lg: "clamp(2.08rem, 6.4vw, 4rem)",
+  sm: "0.9rem",
+  md: "clamp(1.008rem, 2.016vw, 1.44rem)",
+  lg: "clamp(1.498rem, 4.608vw, 2.88rem)",
 };
 
 /**
@@ -45,7 +45,7 @@ export function WandrLogo({
           position: "absolute",
           height: "2.1em",
           width: "auto",
-          top: "40%",
+          top: "30%",
           left: "68%",
           transform: "translate(-50%, -52%)",
           pointerEvents: "none",
