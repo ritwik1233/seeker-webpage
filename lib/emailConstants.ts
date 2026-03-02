@@ -27,7 +27,7 @@ export const WELCOME_EMAIL = {
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(to bottom,rgba(0,0,0,0.45),rgba(0,0,0,0.6));">
                 <tr>
                   <td align="center" style="padding:48px 24px 20px;">
-                    <img src="https://seekerassets.sfo3.cdn.digitaloceanspaces.com/seekr-webpage/edited-photo%20(2).png" alt="SeekR" height="60" style="display:block;height:60px;width:auto;" />
+                    <img src="https://seekerassets.sfo3.cdn.digitaloceanspaces.com/seekr-webpage/edited-photo%20(2).png" alt="SeekR" height="70" style="display:block;height:70px;width:auto;" />
                   </td>
                 </tr>
                 <tr>
@@ -43,52 +43,23 @@ export const WELCOME_EMAIL = {
 
                           <!-- Intro -->
                           <p style="margin:0 0 24px;color:rgba(255,255,255,0.9);font-size:16px;line-height:1.6;">
-                            We're building an intelligent travel assistant that handles the 'admin' so you can focus on the adventure.
+                            You’re officially in the loop. We’re busy perfecting the silent guide for your next great discovery.
                           </p>
 
-                          <!-- Divider -->
-                          <div style="height:1px;background:linear-gradient(to right,#f97316,#ec4899,transparent);margin-bottom:24px;"></div>
-
-                          <!-- Bullet: No more spreadsheets -->
-                          <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom:12px;">
-                            <tr>
-                              <td valign="top" style="padding-right:12px;padding-top:7px;">
-                                <div style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ec4899);"></div>
-                              </td>
-                              <td style="color:rgba(255,255,255,0.9);font-size:15px;line-height:1.6;">
-                                <strong style="color:#ffffff;">No more spreadsheets:</strong> Ditch the 15+ browser tabs
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!-- Bullet: Just your vibe -->
-                          <table role="presentation" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
-                            <tr>
-                              <td valign="top" style="padding-right:12px;padding-top:7px;">
-                                <div style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ec4899);"></div>
-                              </td>
-                              <td style="color:rgba(255,255,255,0.9);font-size:15px;line-height:1.6;">
-                                <strong style="color:#ffffff;">Just your vibe:</strong> Get a full itinerary in minutes, not hours
-                              </td>
-                            </tr>
-                          </table>
-
-                          <!-- Divider -->
-                          <div style="height:1px;background:linear-gradient(to right,#f97316,#ec4899,transparent);margin-bottom:24px;"></div>
-
+                        
                           <!-- Early access -->
                           <p style="margin:0 0 16px;color:rgba(255,255,255,0.9);font-size:16px;line-height:1.6;text-align:center;">
-                            You're officially on the early access list for our beta. We'll ping you the second we go live.
+                              We’ll tap you on the shoulder the second the doors are open.
                           </p>
 
                           <!-- Sign-off -->
                           <p style="margin:0 0 16px;color:rgba(255,255,255,0.9);font-size:16px;line-height:1.6;text-align:center;">
-                            See you at the boarding gate,
+                           Until then, don't stop seeking...
                           </p>
 
                           <!-- Team SeekR -->
                           <p style="margin:0 0 20px;font-size:18px;font-weight:700;text-align:center;">
-                            <span style="color:#f97316;">Team </span><span style="color:#ec4899;">SeekR</span>
+                            <span style="color:#f97316;">Your Fellow</span><span style="color:#ec4899;"> Seek-R</span>
                           </p>
 
                           <!-- PS -->
