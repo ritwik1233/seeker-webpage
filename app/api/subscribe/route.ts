@@ -73,14 +73,11 @@ export async function POST(req: NextRequest) {
       "code" in err &&
       (err as Record<string, unknown>).code === 11000
     ) {
-      console.log(`[subscribe] Duplicate email: ${email} — returning 409`);
-      return NextResponse.json(
-        { error: "Email already registered" },
-        { status: 409 },
-      );
+      console.log(`[subscribe] Duplicate email: ${email} — skipping`);
+    } else {
+      console.error("[subscribe] DB error:", err);
+      throw err;
     }
-    console.error("[subscribe] DB error:", err);
-    throw err;
   }
 
   console.log(`[subscribe] Sending welcome email to ${email}...`);
