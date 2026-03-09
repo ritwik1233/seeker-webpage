@@ -25,15 +25,15 @@ No test framework is configured.
 
 - `app/` — Next.js App Router: root layout, home page, global styles, API routes
 - `ui/` — React components (all client-side with "use client")
-- `lib/` — Utilities: `api.ts` (client fetch wrapper), `db.ts` (MongoDB singleton connection)
-- `models/` — Mongoose schemas: `PreRegister.ts` (email collection)
+- `lib/` — Utilities: `api.ts` (client fetch wrapper), `db.ts` (MongoDB singleton), `validateEmail.ts` (MX record check), `sendEmail.ts` (Brevo transactional email), `emailConstants.ts` (sender config + welcome email template)
+- `models/` — Mongoose schemas: `PreRegister.ts` (email collection with unique constraint)
 
 ### Data Flow
 
 1. `ui/EmailForm.tsx` captures email + Cloudflare Turnstile token
 2. `lib/api.ts` POSTs to `/api/subscribe`
-3. `app/api/subscribe/route.ts` verifies the Turnstile token with Cloudflare, then saves to MongoDB via Mongoose
-4. Duplicate emails return 409
+3. `app/api/subscribe/route.ts` validates email domain (MX lookup), verifies Turnstile token with Cloudflare, saves to MongoDB via Mongoose, then sends a welcome email via Brevo
+4. Duplicate emails are silently skipped (MongoDB unique constraint, no error to user)
 
 ### Styling
 
@@ -48,6 +48,10 @@ Uses `motion` (Framer Motion) library for staggered entrance animations and hove
 - `NEXT_PUBLIC_TURNSTILE_SITE_KEY` — Cloudflare Turnstile public key
 - `TURNSTILE_SECRET_KEY` — Cloudflare Turnstile secret (server-only)
 - `MONGODB_URI` — MongoDB connection string
+- `BREVO_API_KEY` — Brevo (formerly Sendinblue) API key for transactional emails (server-only)
+- `NEXT_PUBLIC_TERMS_URL` — CDN URL to Terms & Conditions PDF
+- `NEXT_PUBLIC_PRIVACY_POLICY_URL` — CDN URL to Privacy Policy PDF
+- `NEXT_PUBLIC_COOKIES_POLICY_URL` — CDN URL to Cookie Policy PDF
 
 ## Deployment
 

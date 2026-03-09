@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
+import Link from "next/link";
 import { SeekRLogo } from "./WanderLogo";
 import { EmailForm } from "./EmailForm";
 import { FeatureCard, FEATURES } from "./FeatureCard";
@@ -85,7 +86,7 @@ export function LandingPage() {
             className="text-[clamp(1.1rem,3vw,1.5rem)] text-white/75 max-w-xl drop-shadow"
           >
             From Vibe to Full Itinerary —{" "}
-            <span className="text-orange-300">In Minutes</span>
+            <span className="text-orange-300">In Minutes</span>.{" "}
           </motion.p>
 
           {/* Email form */}
@@ -240,7 +241,29 @@ export function LandingPage() {
           </div>
 
           {/* ── Footer merged into Section 3 ── */}
-          <div className="mt-8 pt-8 border-t border-white/20 flex justify-center">
+          <div className="mt-8 pt-8 border-t border-white/20 flex flex-col items-center gap-3">
+            <div className="flex gap-4 text-xs">
+              <Link
+                href="/privacy"
+                className="text-white/50 hover:text-white/80 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <span className="text-white/20">|</span>
+              <Link
+                href="/terms"
+                className="text-white/50 hover:text-white/80 transition-colors"
+              >
+                Terms &amp; Conditions
+              </Link>
+              <span className="text-white/20">|</span>
+              {/* <Link
+                href="/cookies"
+                className="text-white/50 hover:text-white/80 transition-colors"
+              >
+                Cookie Policy
+              </Link> */}
+            </div>
             <p className="text-xs text-white/40 flex items-center gap-1">
               Made with <span className="text-rose-300">♥</span> for curious
               seek-rs · © 2026
