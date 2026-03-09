@@ -242,7 +242,7 @@ export function LandingPage() {
 
           {/* ── Footer merged into Section 3 ── */}
           <div className="mt-8 pt-8 border-t border-white/20 flex flex-col items-center gap-3">
-            <div className="flex gap-4 text-xs">
+            <div className="flex gap-4 text-sm font-semibold">
               <Link
                 href="/privacy"
                 className="text-white/50 hover:text-white/80 transition-colors"
@@ -257,12 +257,12 @@ export function LandingPage() {
                 Terms &amp; Conditions
               </Link>
               <span className="text-white/20">|</span>
-              {/* <Link
-                href="/cookies"
+              <Link
+                href="/refunds"
                 className="text-white/50 hover:text-white/80 transition-colors"
               >
-                Cookie Policy
-              </Link> */}
+                Refund Policy
+              </Link>
             </div>
             <p className="text-xs text-white/40 flex items-center gap-1">
               Made with <span className="text-rose-300">♥</span> for curious

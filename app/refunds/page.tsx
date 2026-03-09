@@ -4,8 +4,8 @@ import { PdfViewer } from "../../ui/PdfViewer";
 import { SeekRLogo } from "../../ui/WanderLogo";
 import Link from "next/link";
 
-export default function TermsPage() {
-  const termsUrl = process.env.NEXT_PUBLIC_TERMS_URL;
+export default function RefundPolicyPage() {
+  const refundUrl = process.env.NEXT_PUBLIC_REFUND_POLICY_URL;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 dark:from-slate-950 dark:via-gray-900 dark:to-slate-950">
@@ -17,17 +17,17 @@ export default function TermsPage() {
 
       <div className="max-w-4xl mx-auto px-5 py-16">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-slate-50 mb-2 text-center">
-          Terms &amp; Conditions
+          Refund Policy
         </h1>
         <p className="text-sm text-gray-500 dark:text-slate-400 mb-8 text-center">
           Effective Date: March 9, 2026
         </p>
 
-        {termsUrl ? (
-          <PdfViewer url={termsUrl} title="Terms & Conditions" />
+        {refundUrl ? (
+          <PdfViewer url={refundUrl} title="Refund Policy" />
         ) : (
           <p className="text-gray-600 dark:text-slate-300">
-            The Terms &amp; Conditions document is currently unavailable. Please
+            The Refund Policy document is currently unavailable. Please
             check back later or contact us at{" "}
             <a
               href="mailto:ritwik@seek-r.life"
@@ -52,10 +52,10 @@ export default function TermsPage() {
             </Link>
             <span className="text-white/20">|</span>
             <Link
-              href="/refunds"
+              href="/terms"
               className="text-white/50 hover:text-white/80 transition-colors"
             >
-              Refund Policy
+              Terms &amp; Conditions
             </Link>
           </div>
           <p className="text-xs text-white/40 flex items-center gap-1">
