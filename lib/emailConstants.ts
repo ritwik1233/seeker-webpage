@@ -1,12 +1,10 @@
 export const EMAIL_SENDER = {
-  name: "SeekR",
+  name: "Ritwik from SeekR",
   email: "ritwik@seek-r.life",
 };
 
-export const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
-
 export const WELCOME_EMAIL = {
-  subject: "Welcome to SeekR — Your AI Travel Companion",
+  subject: "Thanks for signing up!",
   htmlContent: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +25,7 @@ export const WELCOME_EMAIL = {
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(to bottom,rgba(0,0,0,0.45),rgba(0,0,0,0.6));">
                 <tr>
                   <td align="center" style="padding:48px 24px 20px;">
-                    <img src="https://seekerassets.sfo3.cdn.digitaloceanspaces.com/seekr-webpage/edited-photo%20(2).png" alt="SeekR" height="70" style="display:block;height:70px;width:auto;" />
+                    <img src="https://seekerassets.sfo3.cdn.digitaloceanspaces.com/seekr-webpage/SeekerLogo.png" alt="SeekR" height="70" style="display:block;height:70px;width:auto;" />
                   </td>
                 </tr>
                 <tr>
@@ -43,13 +41,13 @@ export const WELCOME_EMAIL = {
 
                           <!-- Intro -->
                           <p style="margin:0 0 24px;color:rgba(255,255,255,0.9);font-size:16px;line-height:1.6;">
-                            You’re officially in the loop. We’re busy perfecting the silent guide for your next great discovery.
+                            You're officially in the loop. We're busy perfecting the silent guide for your next great discovery.
                           </p>
 
-                        
+
                           <!-- Early access -->
                           <p style="margin:0 0 16px;color:rgba(255,255,255,0.9);font-size:16px;line-height:1.6;text-align:center;">
-                              We’ll tap you on the shoulder the second the doors are open.
+                              We'll tap you on the shoulder the second the doors are open.
                           </p>
 
                           <!-- Sign-off -->
